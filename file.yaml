@@ -1,0 +1,4 @@
+- name: create the directory
+  file:
+    path: /data
+    state: directory

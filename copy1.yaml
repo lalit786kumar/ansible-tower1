@@ -1,0 +1,5 @@
+- name: copy the index.html file
+  copy:
+    src: /data/code/
+    dest: /var/www/html/
+    remote_src: yes

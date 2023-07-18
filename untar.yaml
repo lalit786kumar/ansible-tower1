@@ -1,0 +1,5 @@
+- name: untar file
+  unarchive:
+    src: /data/code.tar
+    dest: /data/
+    remote_src: yes

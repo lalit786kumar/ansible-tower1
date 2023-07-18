@@ -1,0 +1,26 @@
+- name: this playbook install httpd, create directory,copy the code,edit the httpd.conf file and start the service
+  hosts: webserver
+  tasks:
+    - name: install httpd
+      import_tasks: web.yaml
+    
+    - name: create a directory
+      import_tasks: file.yaml
+
+    - name: copy the code
+      import_tasks: copy.yaml
+   
+    - name: unarchive the code file
+      import_tasks: untar.yaml
+
+    - name: edit the httpd.conf file
+      import_tasks: lineinfile.yaml
+
+    - name: start the httpd service
+      import_tasks: service.yaml
+    
+    - name: copy index.html file
+      import_tasks: copy1.yaml
+
+
+

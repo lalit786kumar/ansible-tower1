@@ -1,0 +1,6 @@
+- name: installed apcahe package for client
+  yum:
+    name: 
+     - httpd
+     - httpd-tools
+

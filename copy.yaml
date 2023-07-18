@@ -1,0 +1,6 @@
+- name: copy the code file into /data directory
+  copy:
+    src: code.tar
+    dest: /data
+    
+    
